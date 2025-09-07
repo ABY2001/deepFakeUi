@@ -1,0 +1,73 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  background: #1e272e;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 50px; /* Adjust if you have a navbar */
+  left: 0;
+  transition: all 0.3s ease;
+  padding-top: 10px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 12px 12px 0;
+  overflow-y: auto;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  text-align: center;
+  border-radius: 0 12px 0 0;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Sidebar Items */
+.sidebar ul.components {
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.sidebar ul li a {
+  padding: 14px 20px;
+  font-size: 1.05em;
+  display: flex;
+  align-items: center;
+  color: #dcdde1;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a i {
+  margin-right: 12px;
+  font-size: 1.2em;
+}
+
+/* Hover + Active State */
+.sidebar ul li a:hover {
+  background: #34495e;
+  color: #1abc9c;
+  transform: translateX(5px);
+}
+
+.sidebar ul li.active > a {
+  background: #1abc9c;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: inset 3px 0 0 #16a085;
+}

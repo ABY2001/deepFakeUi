@@ -1,0 +1,56 @@
+.content-container {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.detector-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.upload-area input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.upload-area .btn {
+  margin-right: 15px;
+}
+
+.file-name {
+  font-style: italic;
+  color: #555;
+}
+
+.predict-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.1em;
+}
+
+.result-area {
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.real {
+  color: #28a745; /* Bootstrap success green */
+}
+
+.fake {
+  color: #dc3545; /* Bootstrap danger red */
+}

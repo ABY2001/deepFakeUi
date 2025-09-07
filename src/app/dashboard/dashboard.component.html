@@ -1,0 +1,22 @@
+<div class="content-container">
+  <h2>Deepfake Audio Detector</h2>
+  <p>Upload an audio file to determine if it is real or a synthetic deepfake.</p>
+
+  <div class="detector-box">
+    <div class="upload-area">
+      <input type="file" (change)="onFileSelected($event)" accept="audio/*" #fileInput>
+      <button class="btn btn-primary" (click)="fileInput.click()">Choose File</button>
+      <span class="file-name" *ngIf="selectedFile">{{ selectedFile?.name }}</span>
+    </div>
+
+    <button class="btn btn-success predict-btn" (click)="onUpload()" [disabled]="!selectedFile">
+      Predict
+    </button>
+
+    <div *ngIf="result" class="result-area">
+       <h3 [ngClass]="{'real': result === 'REAL', 'fake': result === 'FAKE'}">
+        Result: {{ result }} (Confidence: {{ confidence }})
+      </h3> 
+    </div>
+  </div>
+</div>
